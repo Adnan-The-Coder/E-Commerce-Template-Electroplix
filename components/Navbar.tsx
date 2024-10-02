@@ -72,16 +72,17 @@ const Navbar: React.FC = () => {
                         </div>
                         <div className="cursor-pointer">Products</div>
                         <div className="cursor-pointer">Sign Up</div>
-                        <div className="flex items-center">
-                            <ModeToggle />
-                        </div>
                     </div>
                 )}
 
-                <button className="relative">
-                    <HiShoppingCart className="text-xl" />
-                    <span className="absolute -top-1 -right-1 bg-red-500 text-white rounded-full px-1 text-xs">3</span>
-                </button>
+                {/* Move ModeToggle outside of the menu */}
+                <div className="flex items-center space-x-4">
+                    <ModeToggle />
+                    <button className="relative">
+                        <HiShoppingCart className="text-xl" />
+                        <span className="absolute -top-1 -right-1 bg-red-500 text-white rounded-full px-1 text-xs">3</span>
+                    </button>
+                </div>
             </div>
         </nav>
     );
