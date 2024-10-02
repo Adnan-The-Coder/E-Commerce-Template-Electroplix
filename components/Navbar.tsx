@@ -19,13 +19,21 @@ const Navbar: React.FC = () => {
                     <div className="cursor-pointer">Products</div>
                 </div>
                 <div className="flex items-center justify-center flex-grow mx-4 relative">
-                    <input 
-                        type="text" 
-                        placeholder="Search" 
-                        className="border rounded-md p-2 pl-8 w-full max-w-md" 
-                        style={{ borderColor: 'var(--border)', backgroundColor: 'var(--input)' }} 
-                    />
-                    <HiSearch className="absolute left-2 top-2 text-gray-400" />
+                    <div className="relative w-full max-w-md">
+                        <input 
+                            type="text" 
+                            placeholder="Search for products..." 
+                            className="border rounded-md p-2 pr-10 w-full transition-all duration-200 ease-in-out" 
+                            style={{ 
+                                borderColor: 'rgba(255, 255, 255, 0.3)', // Darker but still visible for dark mode
+                                backgroundColor: 'var(--input)', 
+                                borderWidth: '1px' 
+                            }} 
+                            onFocus={(e) => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.7)'} // Brighter on focus
+                            onBlur={(e) => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.3)'} // Reset to darker color
+                        />
+                        <HiSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                    </div>
                 </div>
                 <div className="flex items-center space-x-4">
                     <ModeToggle />
@@ -51,10 +59,16 @@ const Navbar: React.FC = () => {
                             <input 
                                 type="text" 
                                 placeholder="Search" 
-                                className="border rounded-md p-2 pl-8 w-full" 
-                                style={{ borderColor: 'var(--border)', backgroundColor: 'var(--input)' }} 
+                                className="border rounded-md p-2 pr-10 w-full transition-all duration-200 ease-in-out" 
+                                style={{ 
+                                    borderColor: 'rgba(255, 255, 255, 0.3)', // Darker but still visible for dark mode
+                                    backgroundColor: 'var(--input)', 
+                                    borderWidth: '1px' 
+                                }} 
+                                onFocus={(e) => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.7)'} // Brighter on focus
+                                onBlur={(e) => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.3)'} // Reset to darker color
                             />
-                            <HiSearch className="absolute left-2 top-2 text-gray-400" />
+                            <HiSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                         </div>
                         <div className="cursor-pointer">Products</div>
                         <div className="cursor-pointer">Sign Up</div>
