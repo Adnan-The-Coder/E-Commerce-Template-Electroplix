@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <nav className="flex justify-between items-center p-4" style={{ backgroundColor: 'var(--background)', color: 'var(--foreground)' }}>
+        <nav className="flex justify-between items-center p-4 sticky top-0" style={{ backgroundColor: 'var(--background)', color: 'var(--foreground)', zIndex: 1000 }}>
             {/* Desktop View */}
             <div className="hidden md:flex md:items-center md:justify-between w-full">
                 <div className="flex items-center space-x-4">
@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
                     <HiSearch className="absolute left-2 top-2 text-gray-400" />
                 </div>
                 <div className="flex items-center space-x-4">
-                    <ModeToggle/>
+                    <ModeToggle />
                     <button className="relative">
                         <HiShoppingCart className="text-xl" />
                         <span className="absolute -top-1 -right-1 bg-red-500 text-white rounded-full px-1 text-xs">3</span>
@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
                         <div className="cursor-pointer">Products</div>
                         <div className="cursor-pointer">Sign Up</div>
                         <div className="flex items-center">
-                            <ModeToggle/>
+                            <ModeToggle />
                         </div>
                     </div>
                 )}
