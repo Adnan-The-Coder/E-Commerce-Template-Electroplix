@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Products from "@/components/Products";
 import React from "react";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <Navbar />
       <Hero/>
+      <Products/>
     </>
   );
 }

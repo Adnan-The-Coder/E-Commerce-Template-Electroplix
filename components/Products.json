@@ -1,0 +1,36 @@
+[
+    {
+      "title": "Product 1",
+      "subtitle": "Subtitle 1",
+      "description": "Description for product 1",
+      "price": 29.99,
+      "brand": "Brand A",
+      "images": [
+        "https://via.placeholder.com/600x400?text=Product+1",
+        "https://via.placeholder.com/600x400?text=Product+1+Alternate"
+      ]
+    },
+    {
+      "title": "Product 2",
+      "subtitle": "Subtitle 2",
+      "description": "Description for product 2",
+      "price": 19.99,
+      "brand": "Brand B",
+      "images": [
+        "https://via.placeholder.com/600x400?text=Product+2",
+        "https://via.placeholder.com/600x400?text=Product+2+Alternate"
+      ]
+    },
+    {
+      "title": "Product 3",
+      "subtitle": "Subtitle 3",
+      "description": "Description for product 3",
+      "price": 39.99,
+      "brand": "Brand C",
+      "images": [
+        "https://via.placeholder.com/600x400?text=Product+3",
+        "https://via.placeholder.com/600x400?text=Product+3+Alternate"
+      ]
+    }
+  ]
+  
